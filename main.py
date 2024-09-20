@@ -23,10 +23,8 @@ def stop(index):
 
 def IsCorrect():
     if text[0].index == 4 and text[1].index == 4 and text[2].index == 1 and text[3].index == 4:
-        print('true')
         return True
     else:
-        print('false')
         return False
 
 def init():
@@ -63,6 +61,7 @@ while roop:
         time.sleep(3)
         init()
 
+    #screen.blit(blackImage, (300, 400))
     for i in range(len(allSprite)):
         allSprite[i].update(mt)
         allSprite[i].draw(screen)

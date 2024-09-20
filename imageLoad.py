@@ -33,11 +33,14 @@ text_4.append(pygame.image.load('image/text4/더.png'))
 text_4.append(pygame.image.load('image/text4/도.png'))
 text_4.append(pygame.image.load('image/text4/두.png'))
 
-text1 = AnimationSprite(position = (500, 300), images = text_1)
-text2 = AnimationSprite(position = (740, 300), images = text_2)
-text3 = AnimationSprite(position = (980, 300), images = text_3)
-text4 = AnimationSprite(position = (1220, 300), images = text_4)
+text1 = AnimationSprite(position = (300, 390), images = text_1, size = (300, 300))
+text2 = AnimationSprite(position = (640, 390), images = text_2, size = (300, 300))
+text3 = AnimationSprite(position = (980, 390), images = text_3, size = (300, 300))
+text4 = AnimationSprite(position = (1320, 390), images = text_4, size = (300, 300))
 text = [text1, text2, text3, text4]
+
+blackImage = pygame.image.load('image/blackBackground.png')
+blackImage = pygame.transform.scale(blackImage, (1200, 500))
 
 allSprite = []
 allSprite.append(pygame.sprite.Group(text1))

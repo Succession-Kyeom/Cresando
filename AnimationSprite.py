@@ -1,10 +1,8 @@
 import pygame
 
 class AnimationSprite(pygame.sprite.Sprite):
-    def __init__(self, position, images):
+    def __init__(self, position, images, size):
         super(AnimationSprite, self).__init__()
-
-        size = (200, 200) #이미지 사이즈
 
         #이미지 사이즈 맞추기
         self.rect = pygame.Rect(position, size)
