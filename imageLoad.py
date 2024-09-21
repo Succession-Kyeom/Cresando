@@ -3,44 +3,57 @@ from AnimationSprite import AnimationSprite
 
 #첫 번째 글자
 text_1 = []
-text_1.append(pygame.image.load('image/text1/카.png'))
-text_1.append(pygame.image.load('image/text1/코.png'))
-text_1.append(pygame.image.load('image/text1/쿠.png'))
+text_1.append(pygame.image.load('image/blind.png'))
 text_1.append(pygame.image.load('image/text1/크.png'))
-text_1.append(pygame.image.load('image/text1/키.png'))
+text_1.append(pygame.image.load('image/text1/그.png'))
+text_1.append(pygame.image.load('image/text1/구.png'))
 
 #두 번째
 text_2 = []
-text_2.append(pygame.image.load('image/text2/라.png'))
-text_2.append(pygame.image.load('image/text2/래.png'))
-text_2.append(pygame.image.load('image/text2/리.png'))
+text_2.append(pygame.image.load('image/blind.png'))
 text_2.append(pygame.image.load('image/text2/레.png'))
-text_2.append(pygame.image.load('image/text2/로.png'))
+text_2.append(pygame.image.load('image/text2/루.png'))
+text_2.append(pygame.image.load('image/text2/라.png'))
+text_2.append(pygame.image.load('image/text2/린.png'))
 
 #세 번째 글자
 text_3 = []
+text_3.append(pygame.image.load('image/blind.png'))
 text_3.append(pygame.image.load('image/text3/산.png'))
-text_3.append(pygame.image.load('image/text3/삼.png'))
-text_3.append(pygame.image.load('image/text3/선.png'))
-text_3.append(pygame.image.load('image/text3/순.png'))
-text_3.append(pygame.image.load('image/text3/찬.png'))
+text_3.append(pygame.image.load('image/text3/시.png'))
+text_3.append(pygame.image.load('image/text3/신.png'))
+text_3.append(pygame.image.load('image/text3/수.png'))
 
 #네 번째 글자
 text_4 = []
-text_4.append(pygame.image.load('image/text4/다.png'))
-text_4.append(pygame.image.load('image/text4/대.png'))
-text_4.append(pygame.image.load('image/text4/더.png'))
+text_4.append(pygame.image.load('image/blind.png'))
 text_4.append(pygame.image.load('image/text4/도.png'))
-text_4.append(pygame.image.load('image/text4/두.png'))
+text_4.append(pygame.image.load('image/text4/소.png'))
+text_4.append(pygame.image.load('image/text4/보.png'))
+text_4.append(pygame.image.load('image/text4/수.png'))
+text_4.append(pygame.image.load('image/text4/구.png'))
+text_4.append(pygame.image.load('image/text4/조.png'))
+text_4.append(pygame.image.load('image/text4/코.png'))
 
-text1 = AnimationSprite(position = (300, 390), images = text_1, size = (300, 300))
-text2 = AnimationSprite(position = (640, 390), images = text_2, size = (300, 300))
-text3 = AnimationSprite(position = (980, 390), images = text_3, size = (300, 300))
-text4 = AnimationSprite(position = (1320, 390), images = text_4, size = (300, 300))
+text1 = AnimationSprite(position = (460, 560), images = text_1, size = (190, 190), animationTime = 0.7)
+text2 = AnimationSprite(position = (706, 560), images = text_2, size = (190, 190), animationTime = 0.6)
+text3 = AnimationSprite(position = (951, 560), images = text_3, size = (190, 190), animationTime = 0.4)
+text4 = AnimationSprite(position = (1195, 560), images = text_4, size = (190, 190), animationTime = 0.1)
 text = [text1, text2, text3, text4]
 
-blackImage = pygame.image.load('image/blackBackground.png')
-blackImage = pygame.transform.scale(blackImage, (1200, 500))
+cresandoMark = pygame.image.load('image/cresandoIcon.png')
+#cresandoMark = pygame.transform.scale(cresandoMark, ())
+
+background1 = pygame.image.load('image/background.jpg')
+background1 = pygame.transform.scale(background1, (1920, 1080))
+background2 = pygame.image.load('image/background.jpg')
+background2 = pygame.transform.scale(background2, (1920, 1080))
+
+bus = pygame.image.load('image/bus.png')
+bus = pygame.transform.scale(bus, (1304, 532))
+
+quiz1 = pygame.image.load('image/quiz_1.png')
+quiz1 = pygame.transform.scale(quiz1, (1600, 200))
 
 allSprite = []
 allSprite.append(pygame.sprite.Group(text1))
