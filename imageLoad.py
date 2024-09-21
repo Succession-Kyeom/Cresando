@@ -41,9 +41,6 @@ text3 = AnimationSprite(position = (951, 560), images = text_3, size = (190, 190
 text4 = AnimationSprite(position = (1195, 560), images = text_4, size = (190, 190), animationTime = 0.1)
 text = [text1, text2, text3, text4]
 
-cresandoMark = pygame.image.load('image/cresandoIcon.png')
-#cresandoMark = pygame.transform.scale(cresandoMark, ())
-
 background1 = pygame.image.load('image/background.jpg')
 background1 = pygame.transform.scale(background1, (1920, 1080))
 background2 = pygame.image.load('image/background.jpg')
