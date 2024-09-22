@@ -29,4 +29,5 @@ class AnimationSprite(pygame.sprite.Sprite):
                 if self.blind == True:
                     self.image = self.images[0]
                 else:
-                    self.image = self.images[rd.randrange(1, len(self.images))]
+                    self.index = rd.randrange(1, len(self.images))
+                    self.image = self.images[self.index]
